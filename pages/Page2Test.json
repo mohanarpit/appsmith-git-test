@@ -1,0 +1,883 @@
+{
+  "unpublishedPage": {
+    "name": "Page2Test",
+    "slug": "page2test",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1062,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 1060,
+          "containerStyle": "none",
+          "snapRows": 129,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 46,
+          "minHeight": 760,
+          "parentColumnSpace": 1,
+          "dynamicTriggerPathList": [],
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "children": [
+            {
+              "widgetName": "Table1",
+              "columnOrder": [],
+              "isVisibleDownload": true,
+              "topRow": 7,
+              "bottomRow": 35,
+              "parentRowSpace": 10,
+              "isSortable": true,
+              "type": "TABLE_WIDGET",
+              "parentColumnSpace": 19.8125,
+              "dynamicTriggerPathList": [],
+              "dynamicBindingPathList": [
+                {
+                  "key": "primaryColumns.step.computedValue"
+                },
+                {
+                  "key": "primaryColumns.task.computedValue"
+                },
+                {
+                  "key": "primaryColumns.status.computedValue"
+                },
+                {
+                  "key": "primaryColumns.action.computedValue"
+                },
+                {
+                  "key": "tableData"
+                }
+              ],
+              "leftColumn": 1,
+              "primaryColumns": {
+                "step": {
+                  "index": 0,
+                  "width": 150,
+                  "id": "step",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDerived": false,
+                  "label": "step",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.step))}}",
+                  "isCellVisible": true
+                },
+                "task": {
+                  "index": 1,
+                  "width": 150,
+                  "id": "task",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDerived": false,
+                  "label": "task",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.task))}}",
+                  "isCellVisible": true
+                },
+                "status": {
+                  "index": 2,
+                  "width": 150,
+                  "id": "status",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDerived": false,
+                  "label": "status",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.status))}}",
+                  "isCellVisible": true
+                },
+                "action": {
+                  "index": 3,
+                  "width": 150,
+                  "id": "action",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "button",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDerived": false,
+                  "label": "action",
+                  "onClick": "{{currentRow.step === '#1' ? showAlert('Done', 'success') : currentRow.step === '#2' ? navigateTo('https://docs.appsmith.com/core-concepts/connecting-to-data-sources/connecting-to-databases/querying-a-database',undefined,'NEW_WINDOW') : navigateTo('https://docs.appsmith.com/core-concepts/displaying-data-read/display-data-tables',undefined,'NEW_WINDOW')}}",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.action))}}",
+                  "isDisabled": false,
+                  "isCellVisible": true
+                }
+              },
+              "delimiter": ",",
+              "derivedColumns": {},
+              "rightColumn": 37,
+              "textSize": "PARAGRAPH",
+              "widgetId": "bjej1u7nwy",
+              "isVisibleFilters": true,
+              "tableData": "[\n  {\n    \"step\": \"#1\",\n    \"task\": \"Drop a table\",\n    \"status\": \"✅\",\n    \"action\": \"\"\n  },\n  {\n    \"step\": \"#2\",\n    \"task\": \"Create a query fetch_users with the Mock DB\",\n    \"status\": \"--\",\n    \"action\": \"\"\n  },\n  {\n    \"step\": \"#3\",\n    \"task\": \"Bind the query using {{fetch_users.data}}\",\n    \"status\": \"--\",\n    \"action\": \"\"\n  }\n]",
+              "isVisible": true,
+              "label": "Data",
+              "searchKey": "",
+              "version": 3,
+              "parentId": "0",
+              "isLoading": false,
+              "isVisibleCompactMode": true,
+              "horizontalAlignment": "LEFT",
+              "isVisibleSearch": true,
+              "isVisiblePagination": true,
+              "verticalAlignment": "CENTER",
+              "columnSizeMap": {
+                "task": 245,
+                "step": 62,
+                "status": 75
+              }
+            },
+            {
+              "widgetName": "Button1",
+              "rightColumn": 48,
+              "isDefaultClickDisabled": true,
+              "buttonColor": "#03B365",
+              "widgetId": "pru5tz0421",
+              "topRow": 7,
+              "bottomRow": 11,
+              "recaptchaV2": false,
+              "parentRowSpace": 10,
+              "isVisible": true,
+              "type": "BUTTON_WIDGET",
+              "version": 1,
+              "parentId": "0",
+              "isLoading": false,
+              "parentColumnSpace": 19.8125,
+              "leftColumn": 40,
+              "buttonVariant": "PRIMARY",
+              "text": "Submit",
+              "isDisabled": false
+            },
+            {
+              "isRequired": false,
+              "widgetName": "Input1",
+              "rightColumn": 25,
+              "widgetId": "1wnvw25k34",
+              "topRow": 2,
+              "bottomRow": 6,
+              "parentRowSpace": 10,
+              "isVisible": true,
+              "label": "",
+              "type": "INPUT_WIDGET",
+              "version": 1,
+              "parentId": "0",
+              "isLoading": false,
+              "parentColumnSpace": 19.8125,
+              "resetOnSubmit": true,
+              "leftColumn": 5,
+              "inputType": "TEXT",
+              "isDisabled": false,
+              "validation": "true"
+            },
+            {
+              "widgetName": "Table2",
+              "columnOrder": [
+                "V_1_5_4",
+                "Column_2",
+                "rowIndex"
+              ],
+              "isVisibleDownload": true,
+              "dynamicPropertyPathList": [],
+              "topRow": 36,
+              "bottomRow": 71,
+              "parentRowSpace": 10,
+              "isSortable": true,
+              "type": "TABLE_WIDGET",
+              "parentColumnSpace": 1,
+              "dynamicTriggerPathList": [],
+              "dynamicBindingPathList": [
+                {
+                  "key": "tableData"
+                },
+                {
+                  "key": "primaryColumns.V_1_5_4.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Column_2.computedValue"
+                },
+                {
+                  "key": "primaryColumns.rowIndex.computedValue"
+                }
+              ],
+              "leftColumn": 0,
+              "primaryColumns": {
+                "V_1_5_4": {
+                  "index": 0,
+                  "width": 150,
+                  "id": "V_1_5_4",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDerived": false,
+                  "label": "V_1_5_4",
+                  "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.V_1_5_4))}}",
+                  "isCellVisible": true
+                },
+                "Column_2": {
+                  "index": 1,
+                  "width": 150,
+                  "id": "Column_2",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDerived": false,
+                  "label": "Column_2",
+                  "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.Column_2))}}",
+                  "isCellVisible": true
+                },
+                "rowIndex": {
+                  "index": 2,
+                  "width": 150,
+                  "id": "rowIndex",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDerived": false,
+                  "label": "rowIndex",
+                  "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.rowIndex))}}",
+                  "isCellVisible": true
+                }
+              },
+              "delimiter": ",",
+              "derivedColumns": {},
+              "rightColumn": 58,
+              "textSize": "PARAGRAPH",
+              "widgetId": "yzxz754a6a",
+              "isVisibleFilters": true,
+              "tableData": "{{Query1.data}}",
+              "isVisible": true,
+              "label": "Data",
+              "searchKey": "",
+              "version": 3,
+              "parentId": "0",
+              "isLoading": false,
+              "isVisibleCompactMode": true,
+              "horizontalAlignment": "LEFT",
+              "isVisibleSearch": true,
+              "isVisiblePagination": true,
+              "verticalAlignment": "CENTER",
+              "columnSizeMap": {
+                "task": 245,
+                "step": 62,
+                "status": 75,
+                "V_1_5_4": 235
+              }
+            },
+            {
+              "widgetName": "Chart1",
+              "rightColumn": 35,
+              "allowScroll": false,
+              "widgetId": "f88z6kf16c",
+              "topRow": 72,
+              "bottomRow": 104,
+              "parentRowSpace": 10,
+              "isVisible": true,
+              "type": "CHART_WIDGET",
+              "version": 1,
+              "parentId": "0",
+              "isLoading": false,
+              "chartData": {
+                "mdpk7vr3to": {
+                  "seriesName": "Sales",
+                  "data": [
+                    {
+                      "x": "Mon",
+                      "y": 10000
+                    },
+                    {
+                      "x": "Tue",
+                      "y": 12000
+                    },
+                    {
+                      "x": "Wed",
+                      "y": 32000
+                    },
+                    {
+                      "x": "Thu",
+                      "y": 28000
+                    },
+                    {
+                      "x": "Fri",
+                      "y": 14000
+                    },
+                    {
+                      "x": "Sat",
+                      "y": 19000
+                    },
+                    {
+                      "x": "Sun",
+                      "y": 36000
+                    }
+                  ]
+                }
+              },
+              "yAxisName": "Total Order Revenue $",
+              "parentColumnSpace": 19.8125,
+              "dynamicTriggerPathList": [],
+              "chartName": "Last week's revenue",
+              "leftColumn": 11,
+              "dynamicBindingPathList": [],
+              "xAxisName": "Last Week",
+              "customFusionChartConfig": {
+                "type": "column2d",
+                "dataSource": {
+                  "chart": {
+                    "caption": "Last week's revenue",
+                    "xAxisName": "Last Week",
+                    "yAxisName": "Total Order Revenue $",
+                    "theme": "fusion"
+                  },
+                  "data": [
+                    {
+                      "label": "Mon",
+                      "value": 10000
+                    },
+                    {
+                      "label": "Tue",
+                      "value": 12000
+                    },
+                    {
+                      "label": "Wed",
+                      "value": 32000
+                    },
+                    {
+                      "label": "Thu",
+                      "value": 28000
+                    },
+                    {
+                      "label": "Fri",
+                      "value": 14000
+                    },
+                    {
+                      "label": "Sat",
+                      "value": 19000
+                    },
+                    {
+                      "label": "Sun",
+                      "value": 36000
+                    }
+                  ],
+                  "trendlines": [
+                    {
+                      "line": [
+                        {
+                          "startvalue": "38000",
+                          "valueOnRight": "1",
+                          "displayvalue": "Weekly Target"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              "chartType": "LINE_CHART"
+            }
+          ]
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Page2Test_Query1",
+              "name": "Query1",
+              "pluginType": "SAAS",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "widgetNames": [
+          "Input1",
+          "Button1",
+          "Table2",
+          "MainContainer",
+          "Table1",
+          "Chart1"
+        ],
+        "validOnPageLoadActions": true,
+        "id": "Page2Test",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": true
+  },
+  "publishedPage": {
+    "name": "Page2Test",
+    "slug": "page2test",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1062,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 1060,
+          "containerStyle": "none",
+          "snapRows": 129,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 46,
+          "minHeight": 760,
+          "parentColumnSpace": 1,
+          "dynamicTriggerPathList": [],
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "children": [
+            {
+              "widgetName": "Table1",
+              "columnOrder": [],
+              "isVisibleDownload": true,
+              "topRow": 7,
+              "bottomRow": 35,
+              "parentRowSpace": 10,
+              "isSortable": true,
+              "type": "TABLE_WIDGET",
+              "parentColumnSpace": 19.8125,
+              "dynamicTriggerPathList": [],
+              "dynamicBindingPathList": [
+                {
+                  "key": "primaryColumns.step.computedValue"
+                },
+                {
+                  "key": "primaryColumns.task.computedValue"
+                },
+                {
+                  "key": "primaryColumns.status.computedValue"
+                },
+                {
+                  "key": "primaryColumns.action.computedValue"
+                },
+                {
+                  "key": "tableData"
+                }
+              ],
+              "leftColumn": 1,
+              "primaryColumns": {
+                "step": {
+                  "index": 0,
+                  "width": 150,
+                  "id": "step",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDerived": false,
+                  "label": "step",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.step))}}",
+                  "isCellVisible": true
+                },
+                "task": {
+                  "index": 1,
+                  "width": 150,
+                  "id": "task",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDerived": false,
+                  "label": "task",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.task))}}",
+                  "isCellVisible": true
+                },
+                "status": {
+                  "index": 2,
+                  "width": 150,
+                  "id": "status",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDerived": false,
+                  "label": "status",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.status))}}",
+                  "isCellVisible": true
+                },
+                "action": {
+                  "index": 3,
+                  "width": 150,
+                  "id": "action",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "button",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDerived": false,
+                  "label": "action",
+                  "onClick": "{{currentRow.step === '#1' ? showAlert('Done', 'success') : currentRow.step === '#2' ? navigateTo('https://docs.appsmith.com/core-concepts/connecting-to-data-sources/connecting-to-databases/querying-a-database',undefined,'NEW_WINDOW') : navigateTo('https://docs.appsmith.com/core-concepts/displaying-data-read/display-data-tables',undefined,'NEW_WINDOW')}}",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.action))}}",
+                  "isDisabled": false,
+                  "isCellVisible": true
+                }
+              },
+              "delimiter": ",",
+              "derivedColumns": {},
+              "rightColumn": 37,
+              "textSize": "PARAGRAPH",
+              "widgetId": "bjej1u7nwy",
+              "isVisibleFilters": true,
+              "tableData": "[\n  {\n    \"step\": \"#1\",\n    \"task\": \"Drop a table\",\n    \"status\": \"✅\",\n    \"action\": \"\"\n  },\n  {\n    \"step\": \"#2\",\n    \"task\": \"Create a query fetch_users with the Mock DB\",\n    \"status\": \"--\",\n    \"action\": \"\"\n  },\n  {\n    \"step\": \"#3\",\n    \"task\": \"Bind the query using {{fetch_users.data}}\",\n    \"status\": \"--\",\n    \"action\": \"\"\n  }\n]",
+              "isVisible": true,
+              "label": "Data",
+              "searchKey": "",
+              "version": 3,
+              "parentId": "0",
+              "isLoading": false,
+              "isVisibleCompactMode": true,
+              "horizontalAlignment": "LEFT",
+              "isVisibleSearch": true,
+              "isVisiblePagination": true,
+              "verticalAlignment": "CENTER",
+              "columnSizeMap": {
+                "task": 245,
+                "step": 62,
+                "status": 75
+              }
+            },
+            {
+              "widgetName": "Button1",
+              "rightColumn": 48,
+              "isDefaultClickDisabled": true,
+              "buttonColor": "#03B365",
+              "widgetId": "pru5tz0421",
+              "topRow": 7,
+              "bottomRow": 11,
+              "recaptchaV2": false,
+              "parentRowSpace": 10,
+              "isVisible": true,
+              "type": "BUTTON_WIDGET",
+              "version": 1,
+              "parentId": "0",
+              "isLoading": false,
+              "parentColumnSpace": 19.8125,
+              "leftColumn": 40,
+              "buttonVariant": "PRIMARY",
+              "text": "Submit",
+              "isDisabled": false
+            },
+            {
+              "isRequired": false,
+              "widgetName": "Input1",
+              "rightColumn": 25,
+              "widgetId": "1wnvw25k34",
+              "topRow": 2,
+              "bottomRow": 6,
+              "parentRowSpace": 10,
+              "isVisible": true,
+              "label": "",
+              "type": "INPUT_WIDGET",
+              "version": 1,
+              "parentId": "0",
+              "isLoading": false,
+              "parentColumnSpace": 19.8125,
+              "resetOnSubmit": true,
+              "leftColumn": 5,
+              "inputType": "TEXT",
+              "isDisabled": false,
+              "validation": "true"
+            },
+            {
+              "widgetName": "Table2",
+              "columnOrder": [
+                "V_1_5_4",
+                "Column_2",
+                "rowIndex"
+              ],
+              "isVisibleDownload": true,
+              "dynamicPropertyPathList": [],
+              "topRow": 36,
+              "bottomRow": 71,
+              "parentRowSpace": 10,
+              "isSortable": true,
+              "type": "TABLE_WIDGET",
+              "parentColumnSpace": 1,
+              "dynamicTriggerPathList": [],
+              "dynamicBindingPathList": [
+                {
+                  "key": "tableData"
+                },
+                {
+                  "key": "primaryColumns.V_1_5_4.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Column_2.computedValue"
+                },
+                {
+                  "key": "primaryColumns.rowIndex.computedValue"
+                }
+              ],
+              "leftColumn": 0,
+              "primaryColumns": {
+                "V_1_5_4": {
+                  "index": 0,
+                  "width": 150,
+                  "id": "V_1_5_4",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDerived": false,
+                  "label": "V_1_5_4",
+                  "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.V_1_5_4))}}",
+                  "isCellVisible": true
+                },
+                "Column_2": {
+                  "index": 1,
+                  "width": 150,
+                  "id": "Column_2",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDerived": false,
+                  "label": "Column_2",
+                  "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.Column_2))}}",
+                  "isCellVisible": true
+                },
+                "rowIndex": {
+                  "index": 2,
+                  "width": 150,
+                  "id": "rowIndex",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDerived": false,
+                  "label": "rowIndex",
+                  "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.rowIndex))}}",
+                  "isCellVisible": true
+                }
+              },
+              "delimiter": ",",
+              "derivedColumns": {},
+              "rightColumn": 58,
+              "textSize": "PARAGRAPH",
+              "widgetId": "yzxz754a6a",
+              "isVisibleFilters": true,
+              "tableData": "{{Query1.data}}",
+              "isVisible": true,
+              "label": "Data",
+              "searchKey": "",
+              "version": 3,
+              "parentId": "0",
+              "isLoading": false,
+              "isVisibleCompactMode": true,
+              "horizontalAlignment": "LEFT",
+              "isVisibleSearch": true,
+              "isVisiblePagination": true,
+              "verticalAlignment": "CENTER",
+              "columnSizeMap": {
+                "task": 245,
+                "step": 62,
+                "status": 75,
+                "V_1_5_4": 235
+              }
+            },
+            {
+              "widgetName": "Chart1",
+              "rightColumn": 35,
+              "allowScroll": false,
+              "widgetId": "f88z6kf16c",
+              "topRow": 72,
+              "bottomRow": 104,
+              "parentRowSpace": 10,
+              "isVisible": true,
+              "type": "CHART_WIDGET",
+              "version": 1,
+              "parentId": "0",
+              "isLoading": false,
+              "chartData": {
+                "mdpk7vr3to": {
+                  "seriesName": "Sales",
+                  "data": [
+                    {
+                      "x": "Mon",
+                      "y": 10000
+                    },
+                    {
+                      "x": "Tue",
+                      "y": 12000
+                    },
+                    {
+                      "x": "Wed",
+                      "y": 32000
+                    },
+                    {
+                      "x": "Thu",
+                      "y": 28000
+                    },
+                    {
+                      "x": "Fri",
+                      "y": 14000
+                    },
+                    {
+                      "x": "Sat",
+                      "y": 19000
+                    },
+                    {
+                      "x": "Sun",
+                      "y": 36000
+                    }
+                  ]
+                }
+              },
+              "yAxisName": "Total Order Revenue $",
+              "parentColumnSpace": 19.8125,
+              "dynamicTriggerPathList": [],
+              "chartName": "Last week's revenue",
+              "leftColumn": 11,
+              "dynamicBindingPathList": [],
+              "xAxisName": "Last Week",
+              "customFusionChartConfig": {
+                "type": "column2d",
+                "dataSource": {
+                  "chart": {
+                    "caption": "Last week's revenue",
+                    "xAxisName": "Last Week",
+                    "yAxisName": "Total Order Revenue $",
+                    "theme": "fusion"
+                  },
+                  "data": [
+                    {
+                      "label": "Mon",
+                      "value": 10000
+                    },
+                    {
+                      "label": "Tue",
+                      "value": 12000
+                    },
+                    {
+                      "label": "Wed",
+                      "value": 32000
+                    },
+                    {
+                      "label": "Thu",
+                      "value": 28000
+                    },
+                    {
+                      "label": "Fri",
+                      "value": 14000
+                    },
+                    {
+                      "label": "Sat",
+                      "value": 19000
+                    },
+                    {
+                      "label": "Sun",
+                      "value": 36000
+                    }
+                  ],
+                  "trendlines": [
+                    {
+                      "line": [
+                        {
+                          "startvalue": "38000",
+                          "valueOnRight": "1",
+                          "displayvalue": "Weekly Target"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              "chartType": "LINE_CHART"
+            }
+          ]
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Page2Test_Query1",
+              "name": "Query1",
+              "pluginType": "SAAS",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "widgetNames": [
+          "Input1",
+          "Button1",
+          "Table2",
+          "MainContainer",
+          "Table1",
+          "Chart1"
+        ],
+        "validOnPageLoadActions": true,
+        "id": "Page2Test",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": true
+  },
+  "deleted": false,
+  "policies": [],
+  "userPermissions": [
+    "read:pages",
+    "manage:pages"
+  ],
+  "gitSyncId": "5f9512190211101faeb4785d_61c4339ce89bc475f3cb807e"
+}

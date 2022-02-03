@@ -1,0 +1,54 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject1",
+    "pageId": "Page1",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actionIds": [],
+    "defaultToBranchedArchivedActionIdsMap": {},
+    "archivedActionIds": [],
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tmyFun2: () => {\n   getUsers.run()\n\t\t.then(() => {\n\t\t console.log(\"Ran the getUsers\");\n\t\t return \"success\";\n//\t\t console.log(res);\n\t });\n\t}\n}",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": []
+      },
+      {
+        "name": "myVar2",
+        "value": {}
+      }
+    ]
+  },
+  "publishedCollection": {
+    "name": "JSObject1",
+    "pageId": "Page1",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actionIds": [],
+    "defaultToBranchedArchivedActionIdsMap": {},
+    "archivedActionIds": [],
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tmyFun2: () => {\n   getUsers.run()\n\t\t.then(() => {\n\t\t console.log(\"Ran the getUsers\");\n\t\t return \"success\";\n//\t\t console.log(res);\n\t });\n\t}\n}",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": []
+      },
+      {
+        "name": "myVar2",
+        "value": {}
+      }
+    ]
+  },
+  "id": "Page1_JSObject1",
+  "deleted": false,
+  "userPermissions": [
+    "read:actions",
+    "execute:actions",
+    "manage:actions"
+  ],
+  "gitSyncId": "5f9512190211101faeb4785d_61c4343be89bc475f3cd138e"
+}
