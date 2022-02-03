@@ -3,7 +3,7 @@
   "pluginId": "js-plugin",
   "unpublishedAction": {
     "name": "myFun1",
-    "fullyQualifiedName": "JSObject3.myFun1",
+    "fullyQualifiedName": "JSObject2.myFun1",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,16 +14,17 @@
       "userPermissions": []
     },
     "pageId": "Page1",
-    "collectionId": "Page1_JSObject3",
+    "collectionId": "Page1_JSObject2",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n\t\tconsole.log(\"what?\");\n\t\t//write code here\n\t\treturn \"hi\"\n\t}",
+      "body": "() => {\n\t\tconst x = 1; \n\t\t\n\t\t//write code here\n\t}",
       "jsArguments": [],
       "isAsync": false
     },
     "executeOnLoad": false,
+    "clientSideExecution": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -33,7 +34,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n\t\tconsole.log(\"what?\");\n\t\t//write code here\n\t\treturn \"hi\"\n\t}"
+      "() => {\n\t\tconst x = 1; \n\t\t\n\t\t//write code here\n\t}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
@@ -42,7 +43,7 @@
   },
   "publishedAction": {
     "name": "myFun1",
-    "fullyQualifiedName": "JSObject3.myFun1",
+    "fullyQualifiedName": "JSObject2.myFun1",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -53,16 +54,17 @@
       "userPermissions": []
     },
     "pageId": "Page1",
-    "collectionId": "Page1_JSObject3",
+    "collectionId": "Page1_JSObject2",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n\t\tconsole.log(\"what?\");\n\t\t//write code here\n\t\treturn \"hi\"\n\t}",
+      "body": "() => {\n\t\tconst x = 1; \n\t\t\n\t\t//write code here\n\t}",
       "jsArguments": [],
       "isAsync": false
     },
     "executeOnLoad": false,
+    "clientSideExecution": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -72,7 +74,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n\t\tconsole.log(\"what?\");\n\t\t//write code here\n\t\treturn \"hi\"\n\t}"
+      "() => {\n\t\tconst x = 1; \n\t\t\n\t\t//write code here\n\t}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
@@ -86,5 +88,5 @@
     "execute:actions",
     "manage:actions"
   ],
-  "gitSyncId": "5f9512190211101faeb4785d_61e7c513eb0501052b9fed79"
+  "gitSyncId": "5f9512190211101faeb4785d_61c43432e89bc475f3ccf168"
 }
