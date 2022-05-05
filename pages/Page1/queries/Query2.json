@@ -18,23 +18,29 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "formData": {
+        "command": {
+          "data": "FIND",
+          "viewType": "component",
+          "componentData": "FIND"
+        },
         "find": {
-          "query": "{{\n{[Select2.selectedOptionValue]: \"true\"}\n}}"
+          "query": {
+            "data": "{{\n{[Select2.selectedOptionValue]: \"true\"}\n}}",
+            "viewType": "component",
+            "componentData": "{{\n{[Select2.selectedOptionValue]: \"true\"}\n}}"
+          }
         },
-        "delete": {
-          "limit": "SINGLE"
-        },
-        "command": "FIND",
-        "smartSubstitution": false,
-        "aggregate": {
-          "limit": "101"
+        "smartSubstitution": {
+          "data": false,
+          "viewType": "component",
+          "componentData": false
         }
       }
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
-        "key": "formData.find.query"
+        "key": "formData.find.query.data"
       }
     ],
     "isValid": true,

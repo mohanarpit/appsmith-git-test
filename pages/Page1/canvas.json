@@ -19,7 +19,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 52,
+          "version": 57,
           "minHeight": 1292,
           "parentColumnSpace": 1,
           "dynamicTriggerPathList": [],
@@ -160,6 +160,7 @@
               "parentId": "0",
               "isLoading": false,
               "parentColumnSpace": 74,
+              "overflow": "NONE",
               "leftColumn": 4,
               "dynamicBindingPathList": [
                 {
@@ -214,17 +215,19 @@
                       "widgetName": "Icon1",
                       "rightColumn": 64,
                       "onClick": "{{closeModal('Modal1')}}",
-                      "color": "#040627",
                       "iconName": "cross",
+                      "buttonColor": "#2E3D49",
                       "widgetId": "us607hvbb2",
                       "topRow": 1,
                       "bottomRow": 5,
                       "isVisible": true,
-                      "type": "ICON_WIDGET",
+                      "type": "ICON_BUTTON_WIDGET",
                       "version": 1,
                       "parentId": "rjwzhyj9iq",
                       "isLoading": false,
                       "leftColumn": 56,
+                      "borderRadius": "SHARP",
+                      "buttonVariant": "TERTIARY",
                       "iconSize": 24
                     },
                     {
@@ -241,6 +244,7 @@
                       "version": 1,
                       "parentId": "rjwzhyj9iq",
                       "isLoading": false,
+                      "overflow": "NONE",
                       "leftColumn": 1,
                       "fontSize": "HEADING1",
                       "text": "Modal Title"
@@ -352,17 +356,19 @@
                       "widgetName": "Icon2",
                       "rightColumn": 64,
                       "onClick": "{{closeModal('Modal2')}}",
-                      "color": "#040627",
                       "iconName": "cross",
+                      "buttonColor": "#2E3D49",
                       "widgetId": "fjepyo4uj7",
                       "topRow": 1,
                       "bottomRow": 5,
                       "isVisible": true,
-                      "type": "ICON_WIDGET",
+                      "type": "ICON_BUTTON_WIDGET",
                       "version": 1,
                       "parentId": "fvzd88gg5a",
                       "isLoading": false,
                       "leftColumn": 56,
+                      "borderRadius": "SHARP",
+                      "buttonVariant": "TERTIARY",
                       "iconSize": 24
                     },
                     {
@@ -379,6 +385,7 @@
                       "version": 1,
                       "parentId": "fvzd88gg5a",
                       "isLoading": false,
+                      "overflow": "NONE",
                       "leftColumn": 1,
                       "fontSize": "HEADING1",
                       "text": "Modal Title"
@@ -784,6 +791,7 @@
                               "parentId": "kb45cqnrvl",
                               "isLoading": false,
                               "dynamicTriggerPathList": [],
+                              "overflow": "NONE",
                               "dynamicBindingPathList": [
                                 {
                                   "key": "text"
@@ -833,6 +841,7 @@
                               "parentId": "kb45cqnrvl",
                               "isLoading": false,
                               "dynamicTriggerPathList": [],
+                              "overflow": "NONE",
                               "dynamicBindingPathList": [
                                 {
                                   "key": "text"
@@ -1148,6 +1157,7 @@
                               "parentId": "xlq5tg38w4",
                               "isLoading": false,
                               "dynamicTriggerPathList": [],
+                              "overflow": "NONE",
                               "dynamicBindingPathList": [
                                 {
                                   "key": "text"
@@ -1197,6 +1207,7 @@
                               "parentId": "xlq5tg38w4",
                               "isLoading": false,
                               "dynamicTriggerPathList": [],
+                              "overflow": "NONE",
                               "dynamicBindingPathList": [
                                 {
                                   "key": "text"
@@ -1253,13 +1264,13 @@
               "isLoading": false,
               "parentColumnSpace": 19.8125,
               "dynamicTriggerPathList": [],
+              "overflow": "NONE",
               "leftColumn": 31,
               "dynamicBindingPathList": [
                 {
                   "key": "text"
                 }
               ],
-              "shouldTruncate": false,
               "fontSize": "PARAGRAPH",
               "truncateButtonColor": "#03b365",
               "text": "{{Table3.selectedRows}}"
@@ -2043,8 +2054,8 @@
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
+                      "overflow": "NONE",
                       "leftColumn": 1.5,
-                      "shouldTruncate": false,
                       "truncateButtonColor": "#FFC13D",
                       "text": "Form",
                       "key": "cpqq98ofoe",
@@ -2054,7 +2065,6 @@
                       "isVisible": true,
                       "fontStyle": "BOLD",
                       "textColor": "#231F20",
-                      "shouldScroll": false,
                       "version": 1,
                       "parentId": "h1yis2tz7t",
                       "renderMode": "CANVAS",

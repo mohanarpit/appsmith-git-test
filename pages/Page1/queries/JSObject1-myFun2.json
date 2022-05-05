@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "myFun1",
-    "fullyQualifiedName": "JSObject2.myFun1",
+    "name": "myFun2",
+    "fullyQualifiedName": "JSObject1.myFun2",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,14 +14,14 @@
       "userPermissions": []
     },
     "pageId": "Page1",
-    "collectionId": "Page1_JSObject2",
+    "collectionId": "Page1_JSObject1",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n\t\tconst x = 1; \n\t\t\n\t\t//write code here\n\t}",
+      "body": "() => {\n   getUsers.run()\n\t\t.then(() => {\n\t\t console.log(\"Ran the getUsers\");\n\t\t return \"success\";\n//\t\t console.log(res);\n\t });\n\t}",
       "jsArguments": [],
-      "isAsync": false
+      "isAsync": true
     },
     "executeOnLoad": false,
     "clientSideExecution": true,
@@ -34,14 +34,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n\t\tconst x = 1; \n\t\t\n\t\t//write code here\n\t}"
+      "() => {\n   getUsers.run()\n\t\t.then(() => {\n\t\t console.log(\"Ran the getUsers\");\n\t\t return \"success\";\n//\t\t console.log(res);\n\t });\n\t}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_myFun1",
+  "id": "Page1_JSObject1.myFun2",
   "deleted": false,
-  "gitSyncId": "5f9512190211101faeb4785d_61c43432e89bc475f3ccf168"
+  "gitSyncId": "5f9512190211101faeb4785d_61c4342fe89bc475f3cce696"
 }

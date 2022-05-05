@@ -19,16 +19,16 @@
       "encodeParamsToggle": true,
       "body": "show databases",
       "formData": {
-        "command": "FIND",
-        "updateMany": {
-          "limit": "SINGLE"
+        "aggregate": {
+          "limit": "101"
         },
+        "command": "FIND",
         "delete": {
           "limit": "SINGLE"
         },
         "smartSubstitution": true,
-        "aggregate": {
-          "limit": "101"
+        "updateMany": {
+          "limit": "SINGLE"
         }
       }
     },

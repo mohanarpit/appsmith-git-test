@@ -18,28 +18,39 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "formData": {
-        "updateMany": {
-          "limit": "SINGLE"
+        "collection": {
+          "data": "listingsAndReviews",
+          "viewType": "component",
+          "componentData": "listingsAndReviews"
+        },
+        "command": {
+          "data": "FIND",
+          "viewType": "component",
+          "componentData": "FIND"
         },
         "find": {
-          "query": "{{\nSelect1.selectedOptionValue === 'bed_type'?{\"x\":\"y\"} :{\"a\":\"b\"}\n}}",
-          "projection": ""
+          "query": {
+            "data": "{{\nSelect1.selectedOptionValue === 'bed_type'?{\"x\":\"y\"} :{\"a\":\"b\"}\n}}",
+            "viewType": "component",
+            "componentData": "{{\nSelect1.selectedOptionValue === 'bed_type'?{\"x\":\"y\"} :{\"a\":\"b\"}\n}}"
+          },
+          "projection": {
+            "data": "",
+            "viewType": "component",
+            "componentData": ""
+          }
         },
-        "collection": "listingsAndReviews",
-        "delete": {
-          "limit": "SINGLE"
-        },
-        "command": "FIND",
-        "smartSubstitution": true,
-        "aggregate": {
-          "limit": "101"
+        "smartSubstitution": {
+          "data": true,
+          "viewType": "component",
+          "componentData": true
         }
       }
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
-        "key": "formData.find.query"
+        "key": "formData.find.query.data"
       }
     ],
     "isValid": true,
