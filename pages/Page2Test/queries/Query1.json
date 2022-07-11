@@ -72,7 +72,55 @@
           "key": "smartSubstitution",
           "value": false
         }
-      ]
+      ],
+      "formData": {
+        "command": {
+          "data": "FETCH_MANY",
+          "viewType": "component",
+          "componentData": "FETCH_MANY"
+        },
+        "entityType": {
+          "data": "ROWS",
+          "viewType": "component",
+          "componentData": "ROWS"
+        },
+        "pagination": {
+          "data": {
+            "offset": "0",
+            "limit": "10"
+          },
+          "viewType": "component",
+          "componentData": {
+            "offset": "0",
+            "limit": "10"
+          }
+        },
+        "queryFormat": {
+          "data": "ROWS",
+          "viewType": "component",
+          "componentData": "ROWS"
+        },
+        "sheetName": {
+          "data": "11th June",
+          "viewType": "component",
+          "componentData": "11th June"
+        },
+        "sheetUrl": {
+          "data": "https://docs.google.com/spreadsheets/d/1QLAArThDPwUaX577IUpD92qH3UJpCsSg9rOTnt7lGEw/edit",
+          "viewType": "component",
+          "componentData": "https://docs.google.com/spreadsheets/d/1QLAArThDPwUaX577IUpD92qH3UJpCsSg9rOTnt7lGEw/edit"
+        },
+        "smartSubstitution": {
+          "data": false,
+          "viewType": "component",
+          "componentData": false
+        },
+        "tableHeaderIndex": {
+          "data": "1",
+          "viewType": "component",
+          "componentData": "1"
+        }
+      }
     },
     "executeOnLoad": true,
     "dynamicBindingPathList": [],

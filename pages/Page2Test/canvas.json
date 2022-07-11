@@ -417,14 +417,6 @@
             }
           ]
         ],
-        "widgetNames": [
-          "Button1",
-          "Chart1",
-          "Input1",
-          "MainContainer",
-          "Table1",
-          "Table2"
-        ],
         "validOnPageLoadActions": true,
         "id": "Page2Test",
         "deleted": false,
@@ -437,6 +429,5 @@
     "isHidden": true
   },
   "deleted": false,
-  "policies": [],
   "gitSyncId": "5f9512190211101faeb4785d_61c4339ce89bc475f3cb807e"
 }

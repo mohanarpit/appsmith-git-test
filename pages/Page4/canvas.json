@@ -109,11 +109,6 @@
             }
           ]
         ],
-        "widgetNames": [
-          "Button1",
-          "MainContainer",
-          "Text1"
-        ],
         "validOnPageLoadActions": true,
         "id": "Page4",
         "deleted": false,
@@ -125,6 +120,5 @@
     "policies": []
   },
   "deleted": false,
-  "policies": [],
   "gitSyncId": "5f9512190211101faeb4785d_61c433cee89bc475f3cbbee1"
 }
